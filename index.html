@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBI Treni Boolean Italia</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./img/logo1.png" alt="">
+        <span><strong>Boolean Italia....<br>....i viaggi del futuro</strong></span>
+    </div>
+
+    <table class="form container">
+        <!-- input km -->
+        <tr>
+            <td>
+                <label for="user-name">Nome passeggero</label>
+            </td>
+            <td>
+                <input id="user-name" type="text" minlength="3">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="user-km">Chilometri da percorrere</label>
+            </td>
+            <td>
+                <input id="user-km" type="number" min="10" value="10">
+            </td>
+        </tr>
+        <!-- /input km -->
+
+        <!-- input age -->
+        <tr>
+            <td>
+                <label for="user-age">Età passeggero</label>
+            </td>
+            <td>
+                <input id="user-age" type="number" min="0" value="0">
+            </td>
+            <!-- /input age -->
+
+            <!--send button -->
+            <td>
+                <button id="send-btn">Invia</button>
+                <button id="reset-btn">cancella</button>
+            </td>
+        </tr>
+    </table>
+
+    <div id="result" class="container">
+        inserisci i dati per calcolare il costo del tuo biglietto
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
