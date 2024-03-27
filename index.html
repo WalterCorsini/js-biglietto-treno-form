@@ -37,23 +37,33 @@
         <!-- input age -->
         <tr>
             <td>
-                <label for="user-age">Età passeggero</label>
+                <span>Età passeggero</span>
             </td>
             <td>
-                <input id="user-age" type="number" min="0" value="0">
+                <select id="user-age">
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="over65">Over 65</option>
+                </select>
             </td>
             <!-- /input age -->
 
             <!--send button -->
-            <td>
-                <button id="send-btn">Invia</button>
-                <button id="reset-btn">cancella</button>
-            </td>
+        </tr>
+        <tr>
+            <td><button id="send-btn">Invia</button></td>
+            <td><button id="reset-btn">Cancella</td>
         </tr>
     </table>
 
-    <div id="result" class="container">
-        inserisci i dati per calcolare il costo del tuo biglietto
+    <div id="container" class="container hidden">
+        <div id="ticket-name">
+            
+        </div>
+        
+        <div id="result">
+
+        </div>
     </div>
 
     <script src="./js/script.js"></script>
