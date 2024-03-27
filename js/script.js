@@ -12,12 +12,6 @@ let priceWithDiscount =0;
 
 // INPUT
 
-// 2. add eventListener at button
-sendBtnElem.addEventListener("click", function(){
-    let userKm = parseInt(document.getElementById("user-km").value); //number
-    // console.log(userKm, typeof userKm);
-    let userAge = parseInt(document.getElementById("user-age").value); //number
-    // console.log(userAge, typeof userAge);
 
 // button reset
 resetBtnElem.addEventListener("click", function(){
@@ -26,6 +20,14 @@ resetBtnElem.addEventListener("click", function(){
     document.getElementById("user-name").value="";
 });
 
+// 2. add eventListener at button
+sendBtnElem.addEventListener("click", function(){
+    let userKm = parseInt(document.getElementById("user-km").value); //number
+    // console.log(userKm, typeof userKm);
+    let userAge = parseInt(document.getElementById("user-age").value); //number
+    // console.log(userAge, typeof userAge);
+
+    
 // LOGIC
 
     // calculate discount
